@@ -11,4 +11,9 @@ public class KataShould {
     public void startWithAFailingTest() {
         Assertions.fail("start by implementing a test");
     }
+
+    @Test
+    void something() throws Exception {
+        
+    }
 }

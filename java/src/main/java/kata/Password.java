@@ -4,7 +4,7 @@ import java.util.function.BooleanSupplier;
 
 public class Password {
 
-    public boolean isSizeSup6(String password) {
+    public boolean isValid(String password) {
         return password.length()>=6;
     }
 

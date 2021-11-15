@@ -10,8 +10,8 @@ public class PasswordTest {
     @Test
     void returnTrueSizeSup6() {
         Password password=new Password();
-        Assertions.assertTrue(password.isSizeSup6("123ERRa2"));
-        Assertions.assertFalse(password.isSizeSup6("123E2"));
+        Assertions.assertTrue(password.isValid("123ERRa2"));
+        Assertions.assertFalse(password.isVaid("123E2"));
     }
 
 }

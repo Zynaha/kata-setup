@@ -14,6 +14,6 @@ public class KataShould {
 
     @Test
     void something() throws Exception {
-        
+
     }
 }

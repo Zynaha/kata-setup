@@ -14,7 +14,6 @@ public class KataShould {
 
     @Test
     void something() throws Exception {
-
         Assertions.assertTrue(false);
     }
 }

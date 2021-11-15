@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import java.util.function.BooleanSupplier;
 
-public class KataShould {
+public class PasswordTest {
 
     @Test
     void returnTrueSizeSup6() {

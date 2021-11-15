@@ -11,6 +11,7 @@ public class PasswordTest {
     void returnTrueSizeSup6() {
         Password password=new Password();
         Assertions.assertTrue(password.isSizeSup6("123ERRa2"));
+        Assertions.assertTrue(password.isSizeSup6("123E2"));
     }
 
 }

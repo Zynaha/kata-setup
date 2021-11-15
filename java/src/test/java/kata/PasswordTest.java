@@ -23,6 +23,7 @@ public class PasswordTest {
     void returnTrueContainsCaracter() {
     	Password password=new Password();
     	Assertions.assertTrue(password.isValid("DF56SII"));
+    	Assertions.assertTrue(password.isValid("DF59SII"));
     	Assertions.assertFalse(password.isValid("DFyfSII"));
     }
 

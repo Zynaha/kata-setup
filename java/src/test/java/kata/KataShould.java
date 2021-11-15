@@ -2,9 +2,8 @@ package kata;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import sun.security.util.Password;
+
 import static org.assertj.core.api.Assertions.assertThat;
-import java.util.function.BooleanSupplier;
 
 public class KataShould {
 
@@ -16,11 +15,8 @@ public class KataShould {
     @Test
     void something() throws Exception {
         Assertions.assertTrue(false);
+        lklkjsdkfj
+                sdfsd
+                sdf
     }
-    @Test
-    void returnTrueSizeSup6() {
-        Password password=new Password();
-        Assertions.assertTrue(password.isSizeSup6("123ERRa2"));
-    }
-
 }

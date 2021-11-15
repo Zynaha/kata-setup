@@ -12,4 +12,13 @@ public class PasswordTest {
         Assertions.assertFalse(password.isValid("123E2"));
     }
 
+    
+    @Test
+    void returnTrueContainsDigit() {
+        Password password=new Password();
+        Assertions.assertTrue(password.isChecked("123ERRa2"));
+    }
+
+    
+    
 }

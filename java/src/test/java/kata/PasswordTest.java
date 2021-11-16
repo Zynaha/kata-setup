@@ -27,6 +27,10 @@ public class PasswordTest {
     	Assertions.assertFalse(password.isValid("DFyfSII"));
     }
 
-    
-    
+    @Test
+    void testsDuPO() throws Exception {
+        Password password=new Password();
+        Assertions.assertTrue(password.isValid("bonjour1"));
+
+    }
 }

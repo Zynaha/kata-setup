@@ -31,6 +31,8 @@ public class PasswordTest {
     void testsDuPO() throws Exception {
         Password password=new Password();
         Assertions.assertTrue(password.isValid("bonjour1"));
+        Assertions.assertTrue(password.isValid("HEELLO1"));
 
     }
+    
 }

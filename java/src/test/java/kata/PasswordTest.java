@@ -43,7 +43,6 @@ public class PasswordTest {
     void testIsAdmin() throws Exception {
         Password password=new Password();
         Assertions.assertTrue(password.isAdminValid("Aonjour1?98"));
-
     }
     
     

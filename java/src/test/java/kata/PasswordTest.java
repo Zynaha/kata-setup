@@ -33,6 +33,7 @@ public class PasswordTest {
         Assertions.assertTrue(password.isValid("bonjour1"));
         Assertions.assertTrue(password.isValid("HEELLO1"));
         Assertions.assertTrue(password.isValid("TéDéDé1"));
+        Assertions.assertTrue(password.isValid("123456éa"));
 
     }
     

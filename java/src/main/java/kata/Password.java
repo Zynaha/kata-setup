@@ -1,6 +1,8 @@
 package kata;
 
+import java.util.List;
 import java.util.function.BooleanSupplier;
+import java.util.function.IntPredicate;
 
 public class Password {
     
@@ -13,6 +15,11 @@ public class Password {
             && password.length()>=10 
             && password.matches(".*[a-zA-Z].*")
             && password.matches(".*[!@#$%&*()_+=|<>?{}\\\\[\\\\]~-].*") ;
+    }
+
+    public List<String> isPwdAdminValid(String string) {
+        // TODO Auto-generated method stub
+        return null;
     }
 
 }

@@ -55,5 +55,12 @@ public class PasswordTest {
         Password password=new Password();
         Assertions.assertFalse(password.isAdminValid(passwordStr));
     }
+    
+    @Test
+    void test() throws Exception {
+        Password password=new Password();
+        org.assertj.core.api.Assertions.assertThat(password.isPwdAdminValid("Aonjour81A;")).isEmpty();
+
+    }
        
 }

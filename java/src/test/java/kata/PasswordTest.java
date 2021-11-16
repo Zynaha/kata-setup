@@ -41,12 +41,19 @@ public class PasswordTest {
         Assertions.assertTrue(password.isValid("123456éa"));
 
     }
-    //,"Aon#jour%81","Aonjour81"
+
     @ParameterizedTest
     @ValueSource(strings = {"Aonjour1?98","Aonjour?81"})
-    void testIsAdmin(String passwordStr) throws Exception {
+    void testPasswordAdminOK(String passwordStr) throws Exception {
         Password password=new Password();
         Assertions.assertTrue(password.isAdminValid(passwordStr));
+    }
+    
+    @ParameterizedTest
+    @ValueSource(strings = {"Aon#jour%81","Aonjour81"})
+    void testPasswordAdminNOK(String passwordStr) throws Exception {
+        Password password=new Password();
+        Assertions.assertFalse(password.isAdminValid(passwordStr));
     }
        
 }

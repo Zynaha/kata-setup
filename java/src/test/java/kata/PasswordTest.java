@@ -50,7 +50,7 @@ public class PasswordTest {
     }
     
     @ParameterizedTest
-    @ValueSource(strings = {"Aonjour81"})
+    @ValueSource(strings = {"Aonjour81","Aonjour#"})
     void testPasswordAdminNOK(String passwordStr) throws Exception {
         Password password=new Password();
         Assertions.assertFalse(password.isAdminValid(passwordStr));

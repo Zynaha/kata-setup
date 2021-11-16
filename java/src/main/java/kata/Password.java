@@ -17,7 +17,12 @@ public class Password {
             && password.matches(".*[!@#$%&*()_+=|<>?{}\\\\[\\\\]~-].*") ;
     }
 
-    public List<String> isPwdAdminValid(String string) {
+    /*public List<String> isPwdAdminValid(String string) {
+        // TODO Auto-generated method stub
+        return null;
+    }*/
+
+    public List<? extends String> isPwdAdminValid(String string) {
         // TODO Auto-generated method stub
         return null;
     }

@@ -39,5 +39,12 @@ public class PasswordTest {
         Assertions.assertTrue(password.isValid("123456éa"));
 
     }
+    @Test
+    void testIsAdmin() throws Exception {
+        Password password=new Password();
+        Assertions.assertTrue(password.isValid("bonjour1",true));
+
+    }
+    
     
 }

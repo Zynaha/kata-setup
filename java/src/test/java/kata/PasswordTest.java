@@ -2,6 +2,8 @@ package kata;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 public class PasswordTest {
 
@@ -39,13 +41,11 @@ public class PasswordTest {
         Assertions.assertTrue(password.isValid("123456éa"));
 
     }
-    @Test
-    void testIsAdmin() throws Exception {
+    @ParameterizedTest
+    @ValueSource(strings = {"Aonjour1?98","Aonjour?81","Aon#jour%81","Aonjour81"})
+    void testIsAdmin(String passwordStr) throws Exception {
         Password password=new Password();
-        Assertions.assertTrue(password.isAdminValid("Aonjour1?98"));
-        Assertions.assertTrue(password.isAdminValid("Aonjour?81"));
-        Assertions.assertTrue(password.isAdminValid("Aon#jour%81"));
-        Assertions.assertFalse(password.isAdminValid("Aonjour81"));
+        Assertions.assertTrue(password.isAdminValid(passwordStr));
     }
        
 }

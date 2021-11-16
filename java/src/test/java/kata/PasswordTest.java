@@ -44,6 +44,7 @@ public class PasswordTest {
         Password password=new Password();
         Assertions.assertTrue(password.isAdminValid("Aonjour1?98"));
         Assertions.assertTrue(password.isAdminValid("Aonjour?81"));
+        Assertions.assertTrue(password.isAdminValid("Aon#jour%81"));
     }
     
     

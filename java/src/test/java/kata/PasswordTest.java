@@ -16,7 +16,7 @@ public class PasswordTest {
     @Test
     void returnTrueContainsDigit() {
         Password password=new Password();
-        Assertions.assertTrue(password.isValid("12t456"));
+        Assertions.assertTrue(password.isValid("12t4562"));
         Assertions.assertFalse(password.isValid("1263456"));
     }
     @Test

@@ -43,14 +43,14 @@ public class PasswordTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"Aonjour1?98","Aonjour?81"})
+    @ValueSource(strings = {"Aonjour1?98","Aonjour?81","Aon#jour%81"})
     void testPasswordAdminOK(String passwordStr) throws Exception {
         Password password=new Password();
         Assertions.assertTrue(password.isAdminValid(passwordStr));
     }
     
     @ParameterizedTest
-    @ValueSource(strings = {"Aon#jour%81","Aonjour81"})
+    @ValueSource(strings = {"Aonjour81"})
     void testPasswordAdminNOK(String passwordStr) throws Exception {
         Password password=new Password();
         Assertions.assertFalse(password.isAdminValid(passwordStr));

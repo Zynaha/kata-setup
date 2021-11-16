@@ -27,6 +27,7 @@ public class PasswordTest {
     	Assertions.assertFalse(password.isValid("DFyfSII"));
 //    	Assertions.assertFalse(password.isValid("hello1"));
     	Assertions.assertFalse(password.isValid("HELLPPP"));
+    	Assertions.assertFalse(password.isValid("HEL LPPP"));
     }
 
     @Test

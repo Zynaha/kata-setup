@@ -22,9 +22,9 @@ public class Password {
         return null;
     }*/
 
-    public List<? extends String> isPwdAdminValid(String string) {
-        // TODO Auto-generated method stub
-        return null;
-    }
+//    public List<? extends String> isPwdAdminValid(String string) {
+//        // TODO Auto-generated method stub
+//        return null;
+//    }
 
 }

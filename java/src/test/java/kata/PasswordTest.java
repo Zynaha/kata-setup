@@ -42,7 +42,7 @@ public class PasswordTest {
     @Test
     void testIsAdmin() throws Exception {
         Password password=new Password();
-        Assertions.assertTrue(password.isAdminValid("bonjour1?98"));
+        Assertions.assertTrue(password.isAdminValid("Aonjour1?98"));
 
     }
     

@@ -56,7 +56,7 @@ public class TennisGame1 implements TennisGame {
                     score += "-";
                     tempScore = score2;
                 }
-                switch (tempScore) {
+                /*switch (tempScore) {
                     case 0:
                         score += "Love";
                         break;
@@ -69,7 +69,8 @@ public class TennisGame1 implements TennisGame {
                     case 3:
                         score += "Forty";
                         break;
-                }
+                }*/
+                score+=scoresTempMap.get(tempScore);
             }
         }
         return score;

@@ -52,7 +52,7 @@ public class TennisGame1 implements TennisGame {
             score = getEqualScore(score1);
         } else if (score1 >= 4 || score2 >= 4) {
             int minusResult = score1 - score2;
-            scoresMinusResultMap.getOrDefault(minusResult,"Win for player2");
+            score= scoresMinusResultMap.getOrDefault(minusResult,"Win for player2");
             if (minusResult >= 2) score = "Win for player1";
         } else {
             for (int i = 1; i < 3; i++) {

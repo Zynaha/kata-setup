@@ -1,6 +1,7 @@
 package mockito.kata;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -21,7 +22,7 @@ public void test() {
 	String greeting =birthdayService.greeting("AmaZ");
  
 	//Then 
-	assertThat(greeting.equals("AmfffaZ"));
+	assertEquals(greeting,"test");
 }
 
 

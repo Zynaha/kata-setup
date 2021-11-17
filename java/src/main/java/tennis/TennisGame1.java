@@ -67,10 +67,7 @@ public class TennisGame1 implements TennisGame {
     }
 
     private String getEqualScore(int score1) {
-        if (score1>2) {
-        	return "Deuce";
-        }
-        return scoresMap.get(score1);
+        return scoresMap.getOrDefault(score1,"Deuce");
 
     }
 }

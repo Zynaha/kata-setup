@@ -45,27 +45,21 @@ public class TennisGame1 implements TennisGame {
             score2 += 1;
     }
 
-    public String getScore() {
-        String score = "";
-        int tempScore = 0;
-        if (score1 == score2) {
-            score = getEqualScore(score1);
-        } else if (score1 >= 4 || score2 >= 4) {
-            int minusResult = score1 - score2;
-            score= scoresMinusResultMap.getOrDefault(minusResult,"Win for player2");
-            if (minusResult >= 2) score = "Win for player1";
-        } else {
-            for (int i = 1; i < 3; i++) {
-                if (i == 1) tempScore = score1;
-                else {
-                    score += "-";
-                    tempScore = score2;
-                }
-                score+=scoresTempMap.get(tempScore);
-            }
-        }
-        return score;
-    }
+	public String getScore() {
+		String score = "";
+		if (score1 == score2) {
+			score = getEqualScore(score1);
+		} else if (score1 >= 4 || score2 >= 4) {
+			int minusResult = score1 - score2;
+			score = scoresMinusResultMap.getOrDefault(minusResult, "Win for player2");
+			if (minusResult >= 2)
+				score = "Win for player1";
+		} else {
+			score += scoresTempMap.get(score1) + "-" + scoresTempMap.get(score2);
+		}
+
+		return score;
+	}
 
     private String getEqualScore(int score1) {
         return scoresMap.getOrDefault(score1,"Deuce");

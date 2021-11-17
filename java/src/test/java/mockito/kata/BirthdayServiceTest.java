@@ -18,7 +18,7 @@ public void test() {
 
 
 	//When 
-	String greeting =birthdayService.greeting("AmaZ*");
+	String greeting =birthdayService.greeting("AmaZ");
  
 	//Then 
 	assertThat(greeting.equals("AmfffaZ*"));

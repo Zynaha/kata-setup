@@ -11,6 +11,7 @@ public class TennisGame1 implements TennisGame {
     private String player2Name;
     private Map<Integer,String> scoresMap=new HashMap<>();
     private Map<Integer,String> scoresTempMap=new HashMap<>();
+    private Map<Integer,String> scoresMinusResultMap=new HashMap<>();
     
     public void initScoresMap(){
     scoresMap.put(0, "Love-All");
@@ -24,11 +25,18 @@ public class TennisGame1 implements TennisGame {
     	scoresTempMap.put(2, "Thirty");    
     	scoresTempMap.put(3, "Forty");    
     }
+    
+    public void initScoresMinusResultMap(){
+    	scoresMinusResultMap.put(1, "Advantage player1");
+    	scoresMinusResultMap.put(-1, "Advantage player2");
+    	scoresMinusResultMap.put(2, "Thirty");     
+    }
     public TennisGame1(String player1Name, String player2Name) {
         this.player1Name = player1Name;
         this.player2Name = player2Name;
         initScoresMap();
         initScoresTempMap();
+        initScoresMinusResultMap();
     }
 
     public void wonPoint(String playerName) {
@@ -56,20 +64,6 @@ public class TennisGame1 implements TennisGame {
                     score += "-";
                     tempScore = score2;
                 }
-                /*switch (tempScore) {
-                    case 0:
-                        score += "Love";
-                        break;
-                    case 1:
-                        score += "Fifteen";
-                        break;
-                    case 2:
-                        score += "Thirty";
-                        break;
-                    case 3:
-                        score += "Forty";
-                        break;
-                }*/
                 score+=scoresTempMap.get(tempScore);
             }
         }

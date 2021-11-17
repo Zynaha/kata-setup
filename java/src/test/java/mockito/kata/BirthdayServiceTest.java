@@ -12,7 +12,7 @@ public class BirthdayServiceTest {
  
   
 @Test
-public void test() {
+public void by_default_return_good_morning() {
 	//Given
 	ClientRepository repository = Mockito.mock(ClientRepository.class) ;
 	BirthdayService birthdayService=new BirthdayService(repository);

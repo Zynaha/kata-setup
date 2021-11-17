@@ -35,7 +35,7 @@ public void return_happy_birthday() {
 	Mockito.when(repository.birthdayIsTodayFor("AmaZ")).thenReturn(true);	
 	String greeting =birthdayService.greeting("AmaZ");
 	//Then 
-	assertEquals(greeting,"Good morning AmaZ.");
+	assertEquals(greeting,"Happy birthday AmaZ.");
 }
 
 

@@ -24,6 +24,19 @@ public void by_default_return_good_morning() {
 	//Then 
 	assertEquals(greeting,"Good morning AmaZ.");
 }
+@Test
+public void return_happy_birthday() {
+	//Given
+	ClientRepository repository = Mockito.mock(ClientRepository.class) ;
+	BirthdayService birthdayService=new BirthdayService(repository);
+	
+	
+	//When 
+	String greeting =birthdayService.greeting("AmaZ");
+	Mockito.when(repository.birthdayIsTodayFor("AmaZ")).thenReturn(true);	
+	//Then 
+	assertEquals(greeting,"Good morning AmaZ.");
+}
 
 
 

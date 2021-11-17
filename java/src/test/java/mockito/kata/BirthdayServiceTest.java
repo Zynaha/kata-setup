@@ -22,7 +22,7 @@ public void test() {
 	String greeting =birthdayService.greeting("AmaZ");
  
 	//Then 
-	assertEquals(greeting,"Good morning AmaZ");
+	assertEquals(greeting,"Good morning AmaZ.");
 }
 
 

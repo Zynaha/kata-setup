@@ -28,6 +28,7 @@ public class TennisGame1 implements TennisGame {
         this.player1Name = player1Name;
         this.player2Name = player2Name;
         initScoresMap();
+        initScoresTempMap();
     }
 
     public void wonPoint(String playerName) {

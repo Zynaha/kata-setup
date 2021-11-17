@@ -11,7 +11,7 @@ public class BirthdayServiceTest {
  
   
 @Test
-void test() {
+public void test() {
 	//Given
 	ClientRepository repository = Mockito.mock(ClientRepository.class) ;
 	BirthdayService birthdayService=new BirthdayService(repository);

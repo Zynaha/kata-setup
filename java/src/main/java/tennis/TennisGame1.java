@@ -1,12 +1,21 @@
 package tennis;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TennisGame1 implements TennisGame {
 
     private int score1 = 0;
     private int score2 = 0;
     private String player1Name;
     private String player2Name;
-
+    private Map<Integer,String> scoresMap=new HashMap<>();
+    
+    public void initScoresMap(){
+    scoresMap.put(0, "Love-All");
+    scoresMap.put(1, "Fifteen-All");
+    scoresMap.put(2, "Thirty-All");
+    }
     public TennisGame1(String player1Name, String player2Name) {
         this.player1Name = player1Name;
         this.player2Name = player2Name;
@@ -57,22 +66,10 @@ public class TennisGame1 implements TennisGame {
     }
 
     private String getEqualScore(int score1) {
-        String score;
-        switch (score1) {
-            case 0:
-                score = "Love-All";
-                break;
-            case 1:
-                score = "Fifteen-All";
-                break;
-            case 2:
-                score = "Thirty-All";
-                break;
-            default:
-                score = "Deuce";
-                break;
-
+        if (score1>2) {
+        	return "Deuce";
         }
-        return score;
+        return scoresMap.get(score1);
+
     }
 }

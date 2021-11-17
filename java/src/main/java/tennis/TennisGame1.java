@@ -20,8 +20,9 @@ public class TennisGame1 implements TennisGame {
     
     public void initScoresTempMap(){
         scoresMap.put(0, "Love");
-        scoresMap.put(1, "Fifteen-All");
-        scoresMap.put(2, "Thirty-All");    
+        scoresMap.put(1, "Fifteen");
+        scoresMap.put(2, "Thirty");    
+        scoresMap.put(3, "Forty");    
     }
     public TennisGame1(String player1Name, String player2Name) {
         this.player1Name = player1Name;

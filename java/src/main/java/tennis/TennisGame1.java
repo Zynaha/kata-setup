@@ -10,6 +10,7 @@ public class TennisGame1 implements TennisGame {
     private String player1Name;
     private String player2Name;
     private Map<Integer,String> scoresMap=new HashMap<>();
+    private Map<Integer,String> scoresTempMap=new HashMap<>();
     
     public void initScoresMap(){
     scoresMap.put(0, "Love-All");

@@ -20,8 +20,7 @@ public class TripService {
 		if (loggedUser2 == null) {
 			throw new UserNotLoggedInException();
 		}
-		boolean isFriend = checkIsFriend(user, loggedUser2);
-		return isFriend ? findTripsBy(user) : new ArrayList<Trip>();
+		return checkIsFriend(user, loggedUser2) ? findTripsBy(user) : new ArrayList<Trip>();
 	}
 
 	private boolean checkIsFriend(User user, User loggedUser2) {

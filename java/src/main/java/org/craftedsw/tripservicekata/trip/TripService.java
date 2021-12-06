@@ -17,7 +17,6 @@ public class TripService {
 	}
 
 	public List<Trip> getTripsByUser(User user, User loggedUser2) throws UserNotLoggedInException {
-		//List<Trip> tripList = new ArrayList<Trip>();
 		User loggedUser = loggedUser2;
 		boolean isFriend = false;
 		if (loggedUser != null) {
@@ -27,10 +26,6 @@ public class TripService {
 					break;
 				}
 			}
-			/*if (isFriend) {
-				tripList = findTripsBy(user);
-			}
-			return tripList;*/
 			return isFriend? findTripsBy(user):new ArrayList<Trip>();
 		} else {
 			throw new UserNotLoggedInException();

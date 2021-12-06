@@ -5,6 +5,11 @@ import org.craftedsw.tripservicekata.user.UserNotLoggedInException;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
+import java.util.Arrays;
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class TripServiceTest {
 	TripService tripService = new TripService();
 
@@ -40,7 +45,7 @@ public class TripServiceTest {
     }
 
     @Test
-    void name() throws Exception {
+    void name1() throws Exception {
         User user1 = new User(); // TODO find good name
         User loggedUser = new User();
         user1.addFriend(loggedUser);

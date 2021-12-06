@@ -28,7 +28,7 @@ public class TripService {
 				}
 			}
 			if (isFriend) {
-				tripList = extracted(user);
+				tripList = getTripsByUser(user);
 			}
 			return tripList;
 		} else {
@@ -36,7 +36,14 @@ public class TripService {
 		}
 	}
 
+	/**
+	 * @deprecated Use {@link #getTripsByUser(User)} instead
+	 */
 	private List<Trip> extracted(User user) {
+		return getTripsByUser(user);
+	}
+
+	private List<Trip> getTripsByUser(User user) {
 		return TripDAO.findTripsByUser(user);
 	}
 	

@@ -19,9 +19,9 @@ public class TripServiceTest {
 	}
 	@Test
 	public void name() {
-		User user = new User();
+		User traveller = new User();
 		User userLogged = new User();
-		tripService.getTripsByUser(user, userLogged);
+		tripService.getTripsByUser(traveller, userLogged);
 	}
 
 }

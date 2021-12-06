@@ -60,7 +60,6 @@ public class TripServiceTest {
             }
         };*/
 
-
         List<Trip> result = service.getTripsByUser(user1, loggedUser);
         assertThat(result).hasSize(2);
 

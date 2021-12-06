@@ -10,14 +10,6 @@ import org.craftedsw.tripservicekata.user.UserSession;
 public class TripService {
 
     public TripDAO tripDAO;
-    
-	public TripDAO getTripDAO() {
-		return tripDAO;
-	}
-
-	public void setTripDAO(TripDAO tripDAO) {
-		this.tripDAO = tripDAO;
-	}
 
 	public TripService() {
 		this(new TripDAO());

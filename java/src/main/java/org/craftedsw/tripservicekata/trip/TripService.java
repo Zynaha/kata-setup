@@ -23,15 +23,11 @@ public class TripService {
 		return checkIsFriend(user, loggedUser2) ? findTripsBy(user) : new ArrayList<Trip>();
 	}
 
+	/**
+	 * @deprecated Use {@link org.craftedsw.tripservicekata.user.User#checkIsFriend(User)} instead
+	 */
 	private boolean checkIsFriend(User user, User loggedUser2) {
-		boolean isFriend = false;
-		for (User friend : user.getFriends()) {
-			if (friend.equals(loggedUser2)) {
-				isFriend = true;
-				break;
-			}
-		}
-		return isFriend;
+		return user.checkIsFriend(loggedUser2);
 	}
 
 	protected List<Trip> findTripsBy(User user) {

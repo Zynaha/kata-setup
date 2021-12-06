@@ -26,8 +26,6 @@ public class TripService {
 				}
 			}
 			return isFriend? findTripsBy(user):new ArrayList<Trip>();
-		} else {
-			throw new UserNotLoggedInException();
 		}
 	}
 

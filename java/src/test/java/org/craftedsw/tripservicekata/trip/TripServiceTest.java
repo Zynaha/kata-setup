@@ -45,7 +45,7 @@ public class TripServiceTest {
     }
 
     @Test
-    void name1() throws Exception {
+    public void name1() throws Exception {
         User user1 = new User(); // TODO find good name
         User loggedUser = new User();
         user1.addFriend(loggedUser);

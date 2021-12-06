@@ -27,10 +27,11 @@ public class TripService {
 					break;
 				}
 			}
-			if (isFriend) {
+			/*if (isFriend) {
 				tripList = findTripsBy(user);
 			}
-			return tripList;
+			return tripList;*/
+			return isFriend? findTripsBy(user):new ArrayList<Trip>();
 		} else {
 			throw new UserNotLoggedInException();
 		}

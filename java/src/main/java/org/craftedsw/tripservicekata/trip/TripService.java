@@ -37,7 +37,7 @@ public class TripService {
 	}
 
 
-	private List<Trip> findTripsBy(User user) {
+	protected List<Trip> findTripsBy(User user) {
 		return TripDAO.findTripsByUser(user);
 	}
 	

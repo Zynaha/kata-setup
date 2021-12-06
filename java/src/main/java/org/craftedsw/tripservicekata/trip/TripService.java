@@ -20,6 +20,11 @@ public class TripService {
 		if (loggedUser2 == null) {
 			throw new UserNotLoggedInException();
 		}
+		boolean isFriend = extracted(user, loggedUser2);
+		return isFriend ? findTripsBy(user) : new ArrayList<Trip>();
+	}
+
+	private boolean extracted(User user, User loggedUser2) {
 		boolean isFriend = false;
 		for (User friend : user.getFriends()) {
 			if (friend.equals(loggedUser2)) {
@@ -27,7 +32,7 @@ public class TripService {
 				break;
 			}
 		}
-		return isFriend ? findTripsBy(user) : new ArrayList<Trip>();
+		return isFriend;
 	}
 
 	protected List<Trip> findTripsBy(User user) {

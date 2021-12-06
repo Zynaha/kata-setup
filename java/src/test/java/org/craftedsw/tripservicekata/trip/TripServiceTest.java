@@ -32,12 +32,12 @@ public class TripServiceTest {
     TripService service = new TripService();
 
     @Test
-    void throws_exception_for_guests() throws Exception {
+    public void throws_exception_for_guests() throws Exception {
         Assertions.assertThrows(UserNotLoggedInException.class, () -> service.getTripsByUser(null, null));
     }
 
     @Test
-    void no_trips_when_user_has_no_friends() throws Exception {
+    public void no_trips_when_user_has_no_friends() throws Exception {
         User user1 = new User(); // TODO find good name
         User loggedUser = new User();
         List<Trip> result = service.getTripsByUser(user1, loggedUser);

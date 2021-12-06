@@ -7,6 +7,6 @@ public class TripServiceTest {
 	
     @Test 
 	public void name() {
-	  tripService.getTripsByUser(null, UserSession.getInstance().getLoggedUser());
+	  tripService.getTripsByUser(null, null);
 	}
 }

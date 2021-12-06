@@ -36,12 +36,6 @@ public class TripService {
 		}
 	}
 
-	/**
-	 * @deprecated Use {@link #getTripsByUser(User)} instead
-	 */
-	private List<Trip> extracted(User user) {
-		return getTripsByUser(user);
-	}
 
 	private List<Trip> getTripsByUser(User user) {
 		return TripDAO.findTripsByUser(user);

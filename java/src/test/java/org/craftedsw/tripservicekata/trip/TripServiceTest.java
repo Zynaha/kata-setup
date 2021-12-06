@@ -4,6 +4,7 @@ import org.craftedsw.tripservicekata.user.User;
 import org.craftedsw.tripservicekata.user.UserNotLoggedInException;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
+import org.mockito.Mockito;
 
 import java.util.Arrays;
 import java.util.List;
@@ -49,12 +50,15 @@ public class TripServiceTest {
         User user1 = new User(); // TODO find good name
         User loggedUser = new User();
         user1.addFriend(loggedUser);
-        service = new TripService() { // on pourrait faire ceci avec Mockito.spy
+        TripDAO tripDAO=Mockito.mock(TripDAO.class);
+        Mockito.when(tripDAO.findTripsBy(user1)).thenReturn(Arrays.asList(new Trip(), new Trip()));
+        service = new TripService();
+        /*{ // on pourrait faire ceci avec Mockito.spy
             @Override
             protected List<Trip> findTripsBy(User user) {
                 return Arrays.asList(new Trip(), new Trip());
             }
-        };
+        };*/
 
 
         List<Trip> result = service.getTripsByUser(user1, loggedUser);

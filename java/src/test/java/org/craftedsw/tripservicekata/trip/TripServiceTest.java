@@ -11,6 +11,6 @@ public class TripServiceTest {
     @Test 
 	public void name() {
 	  //tripService.getTripsByUser(null, new User());
-	  Assertions.assertThrows(UserNotLoggedInException.class, tripService.getTripsByUser(null, new User()));
+	  Assertions.assertThrows(UserNotLoggedInException.class, ()->tripService.getTripsByUser(null, new User()));
 	}
 }

@@ -8,6 +8,6 @@ public class TripServiceTest {
 	
     @Test 
 	public void name() {
-	  tripService.getTripsByUser(null, null);
+	  tripService.getTripsByUser(null, new User());
 	}
 }

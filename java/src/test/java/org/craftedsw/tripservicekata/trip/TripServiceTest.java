@@ -9,6 +9,7 @@ public class TripServiceTest {
 	TripService tripService=new TripService();
 	
     //@Test(expected =UserNotLoggedInException.class )
+	@Test
 	public void throw_exception_when_user_not_logged() {
 	  //tripService.getTripsByUser(null, null);
 	  Assertions.assertThrows(UserNotLoggedInException.class, ()->{

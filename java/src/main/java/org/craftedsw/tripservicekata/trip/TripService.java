@@ -28,7 +28,7 @@ public class TripService {
 				}
 			}
 			if (isFriend) {
-				tripList = getTripsByUser(user);
+				tripList = findTripsBy(user);
 			}
 			return tripList;
 		} else {
@@ -37,7 +37,7 @@ public class TripService {
 	}
 
 
-	private List<Trip> getTripsByUser(User user) {
+	private List<Trip> findTripsBy(User user) {
 		return TripDAO.findTripsByUser(user);
 	}
 	

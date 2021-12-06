@@ -9,9 +9,7 @@ import org.craftedsw.tripservicekata.user.UserSession;
 
 public class TripService {
 
-	/**
-	 * @deprecated Use {@link #getTripsByUser(User,User)} instead
-	 */
+
 	public List<Trip> getTripsByUser(User user) throws UserNotLoggedInException {
 		return getTripsByUser(user, UserSession.getInstance().getLoggedUser());
 	}

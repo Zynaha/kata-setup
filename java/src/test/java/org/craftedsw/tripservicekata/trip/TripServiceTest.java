@@ -53,7 +53,7 @@ public class TripServiceTest {
         TripDAO tripDAO=Mockito.mock(TripDAO.class);
         Mockito.when(tripDAO.findTripsBy(user1)).thenReturn(Arrays.asList(new Trip(), new Trip()));
         service = new TripService(tripDAO);
-        /*{ // on pourrait faire ceci avec Mockito.spy
+        /*{ // on pourrait faire ceci avec override methode
             @Override
             protected List<Trip> findTripsBy(User user) {
                 return Arrays.asList(new Trip(), new Trip());

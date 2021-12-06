@@ -1,5 +1,13 @@
 package org.craftedsw.tripservicekata.trip;
 
+import org.junit.Test;
+
 public class TripServiceTest {
+	TripService tripService=new TripService();
 	
+    @Test 
+	public void name() {
+	  
+	  
+	}
 }

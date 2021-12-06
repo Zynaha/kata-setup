@@ -13,7 +13,7 @@ public class TripServiceTest {
 	public void throw_exception_when_user_not_logged() {
 	  //tripService.getTripsByUser(null, null);
 	  Assertions.assertThrows(UserNotLoggedInException.class, ()->{
-		tripService.getTripsByUser(null, new User());
+		tripService.getTripsByUser(null, null);
 	});
     	
 	}

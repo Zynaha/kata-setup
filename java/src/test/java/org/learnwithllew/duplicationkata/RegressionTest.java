@@ -18,6 +18,7 @@ public class RegressionTest
     Lesson1Straight song = new Lesson1Straight();
     song.singCatSong();
     Approvals.verify(song.song);
+    
   }
   @Test
   public void testBeer()

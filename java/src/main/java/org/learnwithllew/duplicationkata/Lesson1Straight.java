@@ -5,7 +5,7 @@ public class Lesson1Straight extends Song {
     public void singCatSong() {
         String[] myStringArray;
         myStringArray = new String[]{"We gave the cat to a little kid",
-                
+
                 "But the cat came back",
                 "The very next day",
                 "Oh the cat came back",
@@ -19,7 +19,6 @@ public class Lesson1Straight extends Song {
                 "Oh the cat came back",
                 "We thought he was a goner",
                 "But the cat came back, he just wouldn't go away"
-
 
         };
 

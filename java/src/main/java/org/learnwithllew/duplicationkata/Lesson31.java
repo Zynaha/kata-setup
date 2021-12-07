@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Lesson31 extends Song {
     public void singSong(int style, String... names) {
-        Map<Integer, Singer> singerTypes = new HashMap<Integer, Singer>() {{
+        Map<Integer, Singer> singerTypes = new HashMap<>() {{
             put(1, new BirthDaySinger());
             put(2, new YaySinger());
             put(3, new BaseSinger());

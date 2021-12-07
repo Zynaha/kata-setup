@@ -1,0 +1,12 @@
+<org.learnwithllew.duplicationkata.Person>
+  <firstname>johan</firstname>
+  <lastname>martinsson</lastname>
+  <city>
+    <street>16 allée des vignes</street>
+    <postalCode>38800</postalCode>
+    <city>Champagnier</city>
+    <persons>
+      <org.learnwithllew.duplicationkata.Person reference="../../.."/>
+    </persons>
+  </city>
+</org.learnwithllew.duplicationkata.Person>

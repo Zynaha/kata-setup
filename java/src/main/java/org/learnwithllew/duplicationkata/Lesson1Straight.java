@@ -1,24 +1,16 @@
 package org.learnwithllew.duplicationkata;
 
-public class Lesson1Straight extends Song
-{
-  public void singCatSong()
-  {
+import java.util.ArrayList;
+import java.util.List;
 
-    sing("We gave the cat to a little kid");
+public class Lesson1Straight extends Song {
+	public void singCatSong() {
+		String[] myStringArray;
+		myStringArray = new String[] { "We gave the cat to a little kid", "But the cat came back"
 
-    sing("But the cat came back");
-    sing("The very next day");
-    sing("Oh the cat came back");
-    sing("We thought he was a goner");
-    sing("But the cat came back, he just wouldn't go away");
-
-    sing("We sent the cat out on a boat");
-
-    sing("But the cat came back");
-    sing("The very next day");
-    sing("Oh the cat came back");
-    sing("We thought he was a goner");
-    sing("But the cat came back, he just wouldn't go away");
-  }
+				, "The very next day", "Oh the cat came back", "We thought he was a goner",
+				"But the cat came back he just wouldn't go away", "We sent the cat out on a boat",
+				"But the cat came back", "The very next day", "Oh the cat came back", "We thought he was a goner",
+				"But the cat came back he just wouldn't go away" };
+	}
 }

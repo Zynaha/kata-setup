@@ -7,6 +7,7 @@ public class Lesson1Straight extends Song {
         myStringArray = new String[]{"We gave the cat to a little kid",
 
                 "But the cat came back",
+
                 "The very next day",
                 "Oh the cat came back",
                 "We thought he was a goner",
@@ -14,6 +15,7 @@ public class Lesson1Straight extends Song {
                 "We sent the cat out on a boat",
 
                 "But the cat came back",
+                
                 "The very next day",
                 "Oh the cat came back",
                 "We thought he was a goner",

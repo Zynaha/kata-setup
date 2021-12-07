@@ -15,12 +15,10 @@ public class Lesson1Straight extends Song {
         String string2="We sent the cat out on a boat";
        
         String[] myStringArray=string1
-        
-        for (int j = 0; j < myStringArrayDuplicated.length; j++) {
-        	sing(string1);
-            sing(myStringArrayDuplicated[j]);
-            sing(string2);
+        sing(string1);
+        for (int j = 0; j < myStringArrayDuplicated.length; j++) {       	
+            sing(myStringArrayDuplicated[j]);           
         }
-       
+        sing(string2);
     }
 }

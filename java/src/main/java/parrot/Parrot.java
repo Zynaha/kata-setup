@@ -17,7 +17,7 @@ public class Parrot {
     public double getSpeed() {
         
                 throw new RuntimeException("Should be unreachable");
-        }
+        
     }
     
     public double getBaseSpeed() {

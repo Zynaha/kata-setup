@@ -18,6 +18,6 @@ public class Lesson2Variable extends Song
     sing(nbBottles +" bottles of beer");    
     sing("Take one down, pass it around");
     
-    sing("98 bottles of beer on the wall");
+    sing("98" +string);
   }
 }

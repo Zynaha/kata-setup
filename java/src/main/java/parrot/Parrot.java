@@ -14,10 +14,10 @@ public class Parrot {
         this.isNailed = isNailed;
     }
 
-    public double getSpeed() {
+    public Parrot GetNationalityParrot() {
         switch (type) {
             case EUROPEAN:
-                return getBaseSpeed();
+                return new EuropeanParrot();
             case AFRICAN:
                 return Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
             case NORWEGIAN_BLUE:

@@ -1,28 +1,26 @@
 package org.learnwithllew.duplicationkata;
 
-
 public class Lesson1Straight extends Song {
-    public void singCatSong() {
+	public void singCatSong() {
         String[] myStringArray;
-        myStringArray = new String[]{"We gave the cat to a little kid",
-
-                "But the cat came back",
+        String[] myStringArrayDuplicated;
+        myStringArrayDuplicated= new String[] {
+        		"But the cat came back",
                 "The very next day",
                 "Oh the cat came back",
                 "We thought he was a goner",
-                "But the cat came back, he just wouldn't go away",
-
-                "We sent the cat out on a boat",
-
-                "But the cat came back",
-                "The very next day",
-                "Oh the cat came back",
-                "We thought he was a goner",
-                "But the cat came back, he just wouldn't go away"
+                "But the cat came back, he just wouldn't go away"	
         };
-
-        for (int j = 0; j < myStringArray.length; j++) {
-            sing(myStringArray[j]);
+        String string1="We gave the cat to a little kid";
+        String string2="We sent the cat out on a boat";
+       
+        String[] myStringArray=string1
+        
+        for (int j = 0; j < myStringArrayDuplicated.length; j++) {
+        	sing(string1);
+            sing(myStringArrayDuplicated[j]);
+            sing(string2);
         }
+       
     }
 }

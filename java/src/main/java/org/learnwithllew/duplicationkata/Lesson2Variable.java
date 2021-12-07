@@ -8,7 +8,7 @@ public class Lesson2Variable extends Song
     String nbBottles = "100";
 	sing(nbBottles+" bottles of beer on the wall");  
     
-    sing("100 bottles of beer");   
+    sing(nbBottles +" bottles of beer");   
     sing("Take one down, pass it around");
     
     sing("99 bottles of beer on the wall");

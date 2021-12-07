@@ -19,7 +19,6 @@ public class Lesson1Straight extends Song {
                 "Oh the cat came back",
                 "We thought he was a goner",
                 "But the cat came back, he just wouldn't go away"
-
         };
 
         for (int j = 0; j < myStringArray.length; j++) {

@@ -14,7 +14,7 @@ public class Parrot {
         this.isNailed = isNailed;
     }
 
-    public double getSpeed() {
+    /*public double getSpeed() {
         switch (type) {
             //case EUROPEAN:
                 //return getBaseSpeed();
@@ -25,7 +25,7 @@ public class Parrot {
             default:
                 throw new RuntimeException("Should be unreachable");
         }
-    }
+    }*/
     
     public double getBaseSpeed() {
         return 12.0;

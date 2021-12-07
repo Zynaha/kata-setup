@@ -14,7 +14,7 @@ public class Parrot {
         this.isNailed = isNailed;
     }
 
-    public Parrot GetNationalityParrot() {
+    public Parrot getNationalityParrot(String typeParrot) {
         switch (type) {
             case EUROPEAN:
                 return new EuropeanParrot();
@@ -39,7 +39,10 @@ public class Parrot {
         return 12.0;
     }
     public Double getSpeed(String typeParrot) {
-    	
+    	Parrot parrot= getNationalityParrot(typeParrot);
+    	return parrot.getSpeed();
     }
+
+	
 
 }

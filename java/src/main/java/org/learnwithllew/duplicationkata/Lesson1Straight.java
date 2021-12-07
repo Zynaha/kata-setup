@@ -10,7 +10,7 @@ public class Lesson1Straight extends Song {
 				"We thought he was a goner", "But the cat came back he just wouldn't go away" };
 	
 	for (int j=0;j<myStringArray.length;j++) {
-		sing(myStringArray[j]);
+		sing(myStringArray[j].concat("\n"));
 	}
 	}
 }

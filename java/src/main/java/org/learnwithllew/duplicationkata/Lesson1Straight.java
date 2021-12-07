@@ -13,8 +13,6 @@ public class Lesson1Straight extends Song {
         };
         String string1="We gave the cat to a little kid";
         String string2="We sent the cat out on a boat";
-       
-        String[] myStringArray=string1
         sing(string1);
         for (int j = 0; j < myStringArrayDuplicated.length; j++) {       	
             sing(myStringArrayDuplicated[j]);           

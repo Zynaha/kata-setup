@@ -6,13 +6,14 @@ public class Lesson2Variable extends Song
   {
 	
     String nbBottles = "100";
-	sing(nbBottles+" bottles of beer on the wall");  
+	String string = " bottles of beer on the wall";
+	sing(nbBottles+string);  
     
     sing(nbBottles +" bottles of beer");   
     sing("Take one down, pass it around");
     nbBottles="99";
-    sing(nbBottles +" bottles of beer on the wall");
-    sing(nbBottles +" bottles of beer on the wall");
+    sing(nbBottles +string);
+    sing(nbBottles +string);
     
     sing(nbBottles +" bottles of beer");    
     sing("Take one down, pass it around");

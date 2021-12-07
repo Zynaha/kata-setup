@@ -11,13 +11,14 @@ public class Lesson2Variable extends Song
     
     String string2 = " bottles of beer";
 	sing(nbBottles +string2);   
-    sing("Take one down, pass it around");
+    String line = "Take one down, pass it around";
+	sing(line);
     nbBottles="99";
     sing(nbBottles +string);
     sing(nbBottles +string);
     
     sing(nbBottles +string2);    
-    sing("Take one down, pass it around");
+    sing(line);
     
     sing("98" +string);
   }

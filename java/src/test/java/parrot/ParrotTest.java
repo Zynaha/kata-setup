@@ -20,8 +20,8 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfAfricanParrot_With_Two_Coconuts() {
-    	Parrot parrot = new AfricanParrot(2);
-        //Parrot parrot = new Parrot(ParrotTypeEnum.AFRICAN, 2, 0, false);
+    	//Parrot parrot = new AfricanParrot(2);
+        Parrot parrot = new Parrot(ParrotTypeEnum.AFRICAN, 2, 0, false);
         assertEquals(0.0, parrot.getSpeed(), 0.0);
     }
 

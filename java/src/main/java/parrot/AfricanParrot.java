@@ -2,7 +2,7 @@ package parrot;
 
 public class AfricanParrot extends Parrot {
 
-	public AfricanParrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
+	public AfricanParrot(int numberOfCoconuts) {
 		super(type, numberOfCoconuts, voltage, isNailed);
 		// TODO Auto-generated constructor stub
 	}

@@ -39,7 +39,7 @@ public class Parrot {
         return 12.0;
     }
 
-	public double getSpeed(int i) {
+	public double getSpeed(int numberOfCoconuts) {
 		return Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
 	}
 

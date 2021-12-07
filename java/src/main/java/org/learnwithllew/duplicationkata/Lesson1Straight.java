@@ -5,7 +5,6 @@ public class Lesson1Straight extends Song {
 	public void singCatSong() {
 		String[] myStringArray;
 		myStringArray = new String[] { "We gave the cat to a little kid",
-
 				                       "But the cat came back",
 				                       "The very next day",
 				                       "Oh the cat came back",

@@ -32,7 +32,7 @@ public class Parrot {
     }
 
 
-    private double getBaseSpeed() {
+    public double getBaseSpeed() {
         return 12.0;
     }
 

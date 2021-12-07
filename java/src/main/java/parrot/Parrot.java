@@ -40,7 +40,7 @@ public class Parrot {
     }
     public Double getSpeed(String typeParrot) {
     	Parrot parrot= getNationalityParrot(typeParrot);
-    	return parrot.getSpeed();
+    	return parrot.getSpe;
     }
 
 	
